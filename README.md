@@ -10,14 +10,16 @@ CMPE343 – Database Management Systems and Programming I
 -	22311141 Mohamed Amine Hillali
 
 ## Description
-This DBMS project implements a restaurant management system, which is designed to manage customers, employees, orders made by the customers and its order details, menu showing the items the restaurant offers, and the payments made by the customers.
+This DBMS project implements a restaurant management system designed to manage customers, employees, orders made by the customers and their order details, menu showing the items the restaurant offers, and the payments made by the customers. As for the employees, its main focus is on waiters who handles customer orders. 
+The subtotal from OrderDetails and the total amount from Orders are derived from quantity(OrderDetails) * price(MenuItem) but they are stored for performance reasons
 
--	A Customer can place many Orders, while each Order is linked to one Customer(1 to Many Relation)
--	Each Order is handled by one Employee which is our waiter and one Employee can have many Orders (1 to Many Relation)
--	One Order can contain many MenuItems and a MenuItem can appear in many Orders(1 to Many Relation)
--	A MenuItem can appear in many OrderDetails
--	Each Order has one Payment(1 to 1 Relationship)
--	The Employees are generalized into Cashier, Waiter and Chef
+- Customers to Orders: One to Many (A Customer can place many Orders)
+- Employees to Orders: One to Many (An Employee(waiter) can have many Orders)
+- Orders to OrderDetails: One to Many (Each order contains multiple order items)
+- MenuItems to OrderDetails: One to Many (A menu item can appear in many order entries) 
+- Orders to Payment: One to One (Each order has only one payment, "Assuming each order is paid in a single transaction")  
+- The Employees are generalized into Cashier, Waiter and Chef and an employee can have only one role.
+
 
 ## Technologies
 -	Supabase
