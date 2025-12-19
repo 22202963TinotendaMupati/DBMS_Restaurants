@@ -1,4 +1,4 @@
-# Restaurant Database Management System
+# Restaurant Management Database System
 
 ## Course
 CMPE343 – Database Management Systems and Programming I
@@ -10,7 +10,7 @@ CMPE343 – Database Management Systems and Programming I
 -	22311141 Mohamed Amine Hillali
 
 ## Description
-This DBMS project implements a restaurant database management system, which is designed to manage customers, employees, orders made by the customers and its order details, menu showing the items the restaurant offers, and the payments made by the customers.
+This DBMS project implements a restaurant management system, which is designed to manage customers, employees, orders made by the customers and its order details, menu showing the items the restaurant offers, and the payments made by the customers.
 
 -	A Customer can place many Orders, while each Order is linked to one Customer(1 to Many Relation)
 -	Each Order is handled by one Employee which is our waiter and one Employee can have many Orders (1 to Many Relation)
