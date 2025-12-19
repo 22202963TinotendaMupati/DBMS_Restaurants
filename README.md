@@ -16,7 +16,7 @@ This DBMS project implements a restaurant management system, which is designed t
 -	Each Order is handled by one Employee which is our waiter and one Employee can have many Orders (1 to Many Relation)
 -	One Order can contain many MenuItems and a MenuItem can appear in many Orders(1 to Many Relation)
 -	A MenuItem can appear in many OrderDetails
--	Each Payment has one Payment(1 to 1 Relationship)
+-	Each Order has one Payment(1 to 1 Relationship)
 -	The Employees are generalized into Cashier, Waiter and Chef
 
 ## Technologies
